@@ -1,18 +1,85 @@
 {
   "site": "每日工具推荐",
-  "updated": "2025-06-15",
+  "updated": "2026-06-14",
   "posts": [
+    {
+      "slug": "2026-06-14",
+      "date": "2026-06-14",
+      "title": "2026-06-14 工具快报：这5个工具值得一试",
+      "items": [
+        {
+          "title": "Photopea",
+          "url": "https://photopea.com",
+          "desc": "在线版 Photoshop，功能几乎一模一样",
+          "tag": "设计"
+        },
+        {
+          "title": "Figma 免费版",
+          "url": "https://figma.com",
+          "desc": "UI/UX 设计协作工具，行业标准",
+          "tag": "设计"
+        },
+        {
+          "title": "Unsplash 图库",
+          "url": "https://unsplash.com",
+          "desc": "免费高清图片，商用无需授权",
+          "tag": "设计"
+        },
+        {
+          "title": "Coolors 配色",
+          "url": "https://coolors.co",
+          "desc": "配色方案生成器，一键生成调色板",
+          "tag": "设计"
+        },
+        {
+          "title": "SVG Repo 图标",
+          "url": "https://svgrepo.com",
+          "desc": "免费 SVG 图标库，10万+图标",
+          "tag": "设计"
+        }
+      ]
+    },
     {
       "slug": "2025-06-15",
       "date": "2025-06-15",
       "title": "6个免费在线工具，让工作效率翻倍",
       "items": [
-        {"title": "JSON 格式化工具", "url": "https://xcn6au7vv0e4.aiforce.cloud/app/app_4kcptf9pby7e4/json-formatter.html", "desc": "在线格式化、压缩、校验 JSON 数据，开发者必备工具", "tag": "开发者"},
-        {"title": "图片压缩工具", "url": "https://xcn6au7vv0e4.aiforce.cloud/app/app_4kcptf9pby7e4/image-compress.html", "desc": "浏览器本地压缩图片，支持 JPG/PNG/WebP 格式互转，隐私安全", "tag": "设计"},
-        {"title": "正则表达式测试", "url": "https://xcn6au7vv0e4.aiforce.cloud/app/app_4kcptf9pby7e4/regex-tester.html", "desc": "在线测试正则表达式，实时高亮匹配结果，支持 g/i/m/s 标志位", "tag": "开发者"},
-        {"title": "颜色选择器", "url": "https://xcn6au7vv0e4.aiforce.cloud/app/app_4kcptf9pby7e4/color-picker.html", "desc": "取色、HEX/RGB/HSL 色值转换，设计师和前端开发者常用", "tag": "设计"},
-        {"title": "UUID 生成器", "url": "https://xcn6au7vv0e4.aiforce.cloud/app/app_4kcptf9pby7e4/uuid-generator.html", "desc": "在线生成 UUID v4，支持单个和批量生成，开发测试常用", "tag": "开发者"},
-        {"title": "文本差异对比", "url": "https://xcn6au7vv0e4.aiforce.cloud/app/app_4kcptf9pby7e4/text-diff.html", "desc": "逐行对比两个文本的差异，代码审查和文档对比利器", "tag": "效率"}
+        {
+          "title": "JSON 格式化工具",
+          "url": "https://xcn6au7vv0e4.aiforce.cloud/app/app_4kcptf9pby7e4/json-formatter.html",
+          "desc": "在线格式化、压缩、校验 JSON 数据，开发者必备工具",
+          "tag": "开发者"
+        },
+        {
+          "title": "图片压缩工具",
+          "url": "https://xcn6au7vv0e4.aiforce.cloud/app/app_4kcptf9pby7e4/image-compress.html",
+          "desc": "浏览器本地压缩图片，支持 JPG/PNG/WebP 格式互转，隐私安全",
+          "tag": "设计"
+        },
+        {
+          "title": "正则表达式测试",
+          "url": "https://xcn6au7vv0e4.aiforce.cloud/app/app_4kcptf9pby7e4/regex-tester.html",
+          "desc": "在线测试正则表达式，实时高亮匹配结果，支持 g/i/m/s 标志位",
+          "tag": "开发者"
+        },
+        {
+          "title": "颜色选择器",
+          "url": "https://xcn6au7vv0e4.aiforce.cloud/app/app_4kcptf9pby7e4/color-picker.html",
+          "desc": "取色、HEX/RGB/HSL 色值转换，设计师和前端开发者常用",
+          "tag": "设计"
+        },
+        {
+          "title": "UUID 生成器",
+          "url": "https://xcn6au7vv0e4.aiforce.cloud/app/app_4kcptf9pby7e4/uuid-generator.html",
+          "desc": "在线生成 UUID v4，支持单个和批量生成，开发测试常用",
+          "tag": "开发者"
+        },
+        {
+          "title": "文本差异对比",
+          "url": "https://xcn6au7vv0e4.aiforce.cloud/app/app_4kcptf9pby7e4/text-diff.html",
+          "desc": "逐行对比两个文本的差异，代码审查和文档对比利器",
+          "tag": "效率"
+        }
       ]
     }
   ]
