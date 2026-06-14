@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日工具推荐 - 发现实用在线工具与开源项目</title>
+<meta name="description" content="每日推荐实用在线工具、开源项目和效率技巧。自动更新，发现提升工作效率的好工具。">
+<meta name="keywords" content="工具推荐,在线工具,开源项目,效率工具,每日推荐">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#fafafa;--card:#fff;--text:#1a1a2e;--t2:#666;--accent:#2563eb;--border:#e5e7eb;--r:10px}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans SC",sans-serif;background:var(--bg);color:var(--text);line-height:1.7;min-height:100vh}
+.container{max-width:800px;margin:0 auto;padding:0 20px}
+header{background:var(--card);border-bottom:1px solid var(--border);padding:20px 0;margin-bottom:32px}
+header h1{font-size:1.5rem}.header-sub{color:var(--t2);font-size:.9rem;margin-top:4px}
+.post{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:28px;margin-bottom:24px}
+.post h2{font-size:1.15rem;margin-bottom:4px}.post h2 a{color:var(--text);text-decoration:none}.post h2 a:hover{color:var(--accent)}
+.post .date{color:var(--t2);font-size:.8rem;margin-bottom:16px}
+.post .entry{margin-bottom:20px;padding-bottom:16px;border-bottom:1px solid var(--border)}
+.post .entry:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}
+.post .entry h3{font-size:1rem;margin-bottom:4px}.post .entry h3 a{color:var(--accent);text-decoration:none}.post .entry h3 a:hover{text-decoration:underline}
+.post .entry p{color:var(--t2);font-size:.9rem}
+.post .entry .tag{display:inline-block;background:#eff6ff;color:var(--accent);font-size:.72rem;padding:2px 8px;border-radius:10px;margin-right:4px}
+.cta{background:linear-gradient(135deg,#2563eb,#7c3aed);color:#fff;border-radius:var(--r);padding:28px;text-align:center;margin-bottom:32px}
+.cta h3{font-size:1.2rem;margin-bottom:8px}.cta p{opacity:.9;font-size:.9rem;margin-bottom:16px}
+.cta a{display:inline-block;background:#fff;color:#2563eb;padding:10px 28px;border-radius:20px;text-decoration:none;font-weight:600;font-size:.9rem}
+.archive{margin-top:32px}.archive h3{font-size:1rem;margin-bottom:12px}
+.archive ul{list-style:none}.archive li{padding:6px 0}.archive a{color:var(--accent);text-decoration:none;font-size:.9rem}.archive a:hover{text-decoration:underline}
+.archive .date{color:var(--t2);font-size:.78rem;margin-right:8px}
+footer{text-align:center;padding:32px 20px;color:var(--t2);font-size:.8rem;border-top:1px solid var(--border);margin-top:48px}
+footer a{color:var(--accent);text-decoration:none}
+@media(max-width:600px){.post{padding:18px}header h1{font-size:1.3rem}}
+</style>
+</head>
+<body>
+<header><div class="container"><h1>🔧 每日工具推荐</h1><p class="header-sub">发现实用的在线工具、开源项目和效率技巧 · 每日自动更新</p></div></header>
+<main class="container">
+
+<div class="cta">
+<h3>🛠 免费在线工具箱</h3><p>15+ 实用工具：JSON格式化、图片压缩、二维码生成、时间戳转换…… 无需注册，数据不上传。</p>
+<a href="https://xcn6au7vv0e4.aiforce.cloud/app/app_4kcptf9pby7e4" target="_blank">打开工具箱 →</a>
+</div>
+
+<div id="posts"><p style="text-align:center;color:var(--t2);padding:40px">加载中...</p></div>
+
+<div class="archive" id="archive"></div>
+
+</main>
+<footer><p>每日自动更新 · <a href="feed.json">JSON Feed</a></p></footer>
+<script>
+fetch('feed.json').then(function(r){return r.json()}).then(function(d){
+var p=document.getElementById('posts');p.innerHTML='';
+d.posts.slice(0,7).forEach(function(post){
+var h='<article class="post"><h2><a href="posts/'+post.slug+'.html">'+esc(post.title)+'</a></h2><div class="date">'+post.date+'</div>';
+post.items.forEach(function(item){
+h+='<div class="entry"><h3><a href="'+esc(item.url)+'" target="_blank" rel="nofollow">'+esc(item.title)+'</a></h3><p>'+esc(item.desc)+'</p></div>';
+});
+h+='</article>';p.innerHTML+=h;
+});
+var a=document.getElementById('archive');
+a.innerHTML='<h3>📚 历史推荐</h3><ul>';
+d.posts.forEach(function(post){
+a.innerHTML+='<li><span class="date">'+post.date+'</span><a href="posts/'+post.slug+'.html">'+esc(post.title)+'</a></li>';
+});
+a.innerHTML+='</ul>';
+}).catch(function(){document.getElementById('posts').innerHTML='<p style="text-align:center;color:var(--t2);padding:40px">内容加载中，请稍后刷新...</p>'});
+function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
+</script>
+</body>
+</html>
